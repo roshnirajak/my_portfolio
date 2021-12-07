@@ -9,14 +9,12 @@ body{
 }
 #home,
 #section1,
-#section2,
-#section3,
-#section4 {
+#section2 {
     height: 100vh;
     text-align: center;
     font-size: 20px;
     padding-top: 50px;
-    min-width:90vh;
+    min-width:auto;
 }
 
 /*Navbar*/
@@ -69,6 +67,7 @@ nav{
 }
 .navbar-brand{
     font-family: 'Exo', sans-serif;
+    margin-top: 10px;
 }
 
 /*Homepage*/
@@ -87,103 +86,49 @@ nav{
 }
 .skill{
     font-size:30px;
-    margin-top: 60px;
-    
+    margin-top: 0px;   
 }
-
+.sk{
+  font-size: 18px;
+}
 /*About*/
 #section2 {
     background-color:white;
 
 }
 hr{
-    height:2px;
-    width:90vh;
+    height:1px;
+    width:30vh;
+    background-color: gray;
 }
 .abt{
     font-size: 30px;
+    margin-top: 10px;
 }
 /*Contact*/
 #section3 {
     background-color:0;
     color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+    min-width:auto;
 }
-h1 {
-  font-size: 30px;
-  color: white;
-  font-weight: 600;
-  padding-bottom: 0px;
+
+.icon{
+  padding:10px;
+  background-color: 0;
+  border-radius: 30px;
+}
+.icon:hover{
+  background-color: rgba(255, 255, 255, 0.178);
+  transition: 0.4s;
 }
 
 p {
   color: #d2d2d2;
 }
 
-
-.container-two {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 5%;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 20px 0;
-}
-
-input,
-textarea,
-label {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  color: #828282;
-}
-
-input,
-textarea {
-  background-color: transparent;
-  border: 0;
-  border-bottom: 2px solid #828282;
-}
-
-input[type=submit] {
-  background-color: #545557;
-  padding: 15px 0;
-  color: white;
-  font-size: 18px;
-  border-bottom: none;
-  margin-top: 30px;
-  cursor: pointer;
-  transition: all .3s ease;
-}
-
-input[type=submit]:hover {
-  background: #FFF;
-  color: #1b1c1e;
-}
-
-input,
-textarea {
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-}
-
-input:focus,
-textarea:focus {
-  outline: 1px solid #828282;
-}
-
-a {
-  color: #828282;
-}
-
-a:hover {
-  color: #fff;
-}
 
 /*Progress Bar*/
 
@@ -194,9 +139,9 @@ a:hover {
 }
 .skill-bars{
   padding: 25px 30px;
-  width: 600px;
-  background: #fff;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  width: 300px;
+  background: 0;
+  box-shadow: 0;
   border-radius: 10px;
   text-align: left;
 }
@@ -223,7 +168,7 @@ a:hover {
 .skill-bars .bar .progress-line{
   height: 10px;
   width: 100%;
-  background: #f0f0f0;
+  background: #65666b5d;
   position: relative;
   transform: scaleX(0);
   transform-origin: left;
@@ -256,6 +201,9 @@ a:hover {
 .bar .progress-line.js span{
   width: 20%;
 }
+.bar .progress-line.php span{
+  width: 10%;
+}
 .bar .progress-line.python span{
   width: 50%;
 }
@@ -264,27 +212,27 @@ a:hover {
 }
 .progress-line span::before{
   position: absolute;
-  content: "";
-  top: -10px;
+  content:0;
+  top: 0px;
   right: 0;
   height: 0;
   width: 0;
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-color: #000;
+  border-top-color: rgba(0, 0, 0, 0.678);
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
 .progress-line span::after{
   position: absolute;
   top: -28px;
-  right: -40px;
+  right:-40px;
   font-weight: 500;
-  background: #000;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.102);
+  color: rgb(0, 0, 0);
   padding: 1px 8px;
-  font-size: 12px;
+  font-size: 10px;
   border-radius: 3px;
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
@@ -303,6 +251,9 @@ a:hover {
 .progress-line.js span::after{
   content: "20%";
 }
+.progress-line.php span::after{
+  content: "10%";
+}
 .progress-line.python span::after{
   content: "50%";
 }
@@ -318,5 +269,13 @@ a:hover {
         display: flex;
         margin-top: 0px;
     }
+    hr{
+      width: 700px;
+    }
+    .skill-bars{
+      padding: 25px 30px;
+      width: 600px;
+    }
+
 }
 
