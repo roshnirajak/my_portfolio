@@ -103,7 +103,7 @@ hr{
 }
 .abt{
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 /*Contact*/
 #section3 {
@@ -146,7 +146,7 @@ p {
   text-align: left;
 }
 .skill-bars .bar{
-  margin: 0px 0;
+  margin-top: 20px;
 }
 .skill-bars .bar:first-child{
   margin-top: 0px;
@@ -213,7 +213,7 @@ p {
 .progress-line span::before{
   position: absolute;
   content:0;
-  top: 0px;
+  top: 9px;
   right: 0;
   height: 0;
   width: 0;
