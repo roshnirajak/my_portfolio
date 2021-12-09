@@ -34,6 +34,7 @@ $(window).scroll(function () {
     });
 }).scroll();
 
+/*for navbar*/
 const hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', function(){
