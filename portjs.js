@@ -40,3 +40,6 @@ const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', function(){
     this.classList.toggle('is-active');
 })
+/*animation*/
+const element = document.querySelector('.nav-item');
+element.classList.add('animate__animated', 'animate__bounceOutLeft');
