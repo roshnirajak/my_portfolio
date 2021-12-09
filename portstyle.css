@@ -7,8 +7,7 @@ body{
     background-position: center;
     font-family: 'Exo', sans-serif;
 }
-#home,
-#section2 {
+#home{
     height: 100vh;
     text-align: center;
     font-size: 20px;
@@ -41,7 +40,6 @@ nav{
 #section1 {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.966), rgba(255, 255, 255, 0.979),rgba(255, 255, 255));
     color: rgb(0, 0, 0);
-    height: auto;
     text-align: center;
     font-size: 20px;
     padding-top: 50px;
@@ -52,21 +50,28 @@ nav{
     margin-top: 0px;   
 }
 .sk{
-  font-size: 18px;
+  font-size: 15px;
 }
 /*About*/
 #section2 {
     background-color:white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+    min-width:auto;
+    height: 60vh;
 }
 .about{
   display: 0;
+
 }
 .table-img{
   height: 20vh;
 }
 .bio{
   font-size: 10px;
-  width: 90%;
+  margin-left:8px ;
+  margin-right: 8px;
 }
 hr{
     height:1px;
@@ -75,18 +80,20 @@ hr{
 }
 .abt{
     font-size: 30px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 /*Contact*/
 #section3 {
     background-color:0;
     color: white;
     text-align: center;
-    font-size: 20px;
-    padding-top: 50px;
+    padding-top: 0px;
     min-width:auto;
 }
-
+.cont{
+  font-size: 23px;
+  margin:10px
+}
 .icon{
   padding:10px;
   background-color: 0;
@@ -97,9 +104,6 @@ hr{
   transition: 0.4s;
 }
 
-p {
-  color: #d2d2d2;
-}
 
 
 /*Progress Bar*/
@@ -116,6 +120,8 @@ p {
   box-shadow: 0;
   border-radius: 10px;
   text-align: left;
+  margin-right: 0;
+  margin-left: 0;
 }
 .skill-bars .bar{
   margin-top: 15px;
@@ -224,16 +230,8 @@ p {
 .progress-line.c span::after{
   content: "30%";
 }
-@media (min-width: 569px){
-  .navbar-nav{
-    display: none;
-    margin-top: 0px;
-  }
-  .navbar-default{
-    display: none;
-  }
-}
-@media (min-width: 570px){
+
+@media (min-width: 580px){
     .navbar-nav{
         display: flex;
         margin-top: 0px;
@@ -259,8 +257,12 @@ p {
       height: 30vh;
     }
     .bio{
-      width: 30vh;
+      width: 40vh;
       font-size: 17px;
+      margin-left: 10px;
+    }
+    .sk{
+      font-size: 18px;
     }
 }
 
