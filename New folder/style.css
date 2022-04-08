@@ -3,38 +3,90 @@
     padding: 0;
     scroll-behavior:smooth ;
 }
-/*homepage*/
-.div1{
-    background-image: linear-gradient(to right,rgba(117,3,212,0.4),rgba(93,8,200,0.2),rgba(75,23,184,0)),url('img/bg_blue.jpg'); 
-    background-size: cover; height:100vh;
+/*body*/
+body{
+    background-color:#FFF8F3; 
 }
 
-/*home background image*/
-.bg{
-    object-fit: cover;
-    height:100vh
-}
 
 /*navbar*/
-.nav{
-    display: flex;
-    text-align:right;
-    list-style: none;
-    padding: 10px
+/*space btw top nd the navbar*/
+.navbar{
+
+    overflow: hidden;
 }
-.nav li{
-    
+/* no bullets && Center alignment*/
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*nav is inside header*/
+header{
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background-color: rgba(255, 248, 243, 0.9);
+    z-index: 99999;
+}
+/*space btw nav options*/
+.navbar ul li{
     padding:17px;
     font-size: 18px;
+
+}
+/*no text style && color && font family of nav*/
+.navbar ul li a{
+    text-decoration: none;
+    color:#ff5100/*#FAEEE7*/;
+    font-family: 'Roboto', sans-serif;
+
+}
+/*on hover of nav fonts*/
+.navbar a:hover {
+    color: black;
+    transition: 0.3s ease;
+}
+/*sticky nav*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2 0;
+}
+/*whole home page*/
+.div1{
+    height: 70vh;
+    background-repeat: none;
 }
 
 /*Hi I'm Rosh*/
 .mid{
-    color:#FAEEE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45vh;
+    color:#1C6DD0;
+    font-family: 'Staatliches';
+    font-size: 40px;
+
+}
+.mid h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    width:300px
 }
 /*Section 2*/
 .sec2{
     height:100vh;
-    background: linear-gradient(to right,rgba(117,3,212,255),rgba(93,8,200,255),rgba(75,23,184,255))
+    background-color:#FAEEE7;
 }
 
+@media screen and (max-width: 400px) {
+}

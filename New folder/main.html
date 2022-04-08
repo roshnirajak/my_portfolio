@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!--JS-->
     <script src="folio.js"></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Staatliches&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
 
-    <div class="div1">
-        <div>
-            <navbar class="nav">
-                <li class="logo"></li>
-                <li>Home</li>
-                <li>Skills</li>
-                <li>About Me</li>
-                <li>Contact</li>
-            <navbar>
+<body>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementsByClassName("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <div class="mid">Hi I'm Rosh</div>
-    </div>
-<section class="sec2">hello</section>
+    </header>
+
+    <section>
+        <div class="div1">
+
+            <div class="mid">
+                <h1>Hi I'm Rosh</h1>
+            </div>
+        </div>
+        <div class="sec2">hello</div>
+        <div class="sec2">hello</div>
+    </section>
 </body>
+
 </html>
