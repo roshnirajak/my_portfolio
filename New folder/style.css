@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:smooth ;
+}
+/*homepage*/
+.div1{
+    background-image: linear-gradient(to right,rgba(117,3,212,0.4),rgba(93,8,200,0.2),rgba(75,23,184,0)),url('img/bg_blue.jpg'); 
+    background-size: cover; height:100vh;
+}
+
+/*home background image*/
+.bg{
+    object-fit: cover;
+    height:100vh
+}
+
+/*navbar*/
+.nav{
+    display: flex;
+    text-align:right;
+    list-style: none;
+    padding: 10px
+}
+.nav li{
+    
+    padding:17px;
+    font-size: 18px;
+}
+
+/*Hi I'm Rosh*/
+.mid{
+    color:#FAEEE7;
+}
+/*Section 2*/
+.sec2{
+    height:100vh;
+    background: linear-gradient(to right,rgba(117,3,212,255),rgba(93,8,200,255),rgba(75,23,184,255))
+}
+
