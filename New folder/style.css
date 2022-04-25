@@ -27,7 +27,7 @@ header{
     position: fixed;
 	top: 0;
 	left: 0;
-    height: 12;
+    min-height: 12;
 	width: 100%;
 	padding: 0px 0;
 	text-align: center;
@@ -37,7 +37,7 @@ header{
 /*space btw nav options*/
 .navbar ul li{
     padding:15px;
-    font-size: 18px;
+    font-size: 16px;
 }
 /*no text style && color && font family of nav*/
 .navbar ul li a{
@@ -59,61 +59,43 @@ header{
 }
 /*whole home page*/
 .div1{
-    height: 70vh;
-    background-color:#FFF8F3 fixed 100%; 
-}
-/*for the cursor difference*/
-.inner-cursor{
-    position:fixed;
-    left:10px;
-    width:10px;
-    height:10px;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    border-radius:50%;
-    transition: width 0.5s, height 0.5s;
-    pointer-events: none;
-    mix-blend-mode: difference;
-}
-.inner-cursor.grow{
-    width:25px;
-    height: 25px;
-    transition:width 0.5s, height 0.5s
-}
-.outer-cursor{
-    position: fixed;
-    left:10px;
-    width:25px;
-    height:25px;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius:50%;
-    transition: width 0.5s, height 0.5s;
-    pointer-events: none;
-    mix-blend-mode: difference;
-}
+    height: 100vh;
+    background-color:#FFF8F3; 
+  
 
+
+    
+   
+    display: flex;
+
+    justify-content: center; 
+    align-items: center; 
+    
+   
+}
 /*Hi I'm Rosh*/
 .mid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45vh;
+    width: 215px;
+    height: 80px;
+    left: 0;
+
+
     color:#1C6DD0;
     font-family: 'Staatliches';
-    font-size: 40px;
+    font-size: 30px;
 }
-.mid h1 a{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-    width:300px
+.mid h1 a{  
+ 
+    position: fixed;
+
+
 }
+
 /*Section 2*/
-.sec2{
+.sec2 , .sec3 {
+    position: relative;
     height:100vh;
-    background-color:#FAEEE7;
+    background-color:#f5611d/*#FAEEE7*/;
 }
 
 @media screen and (max-width: 400px) {

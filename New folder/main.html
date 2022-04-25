@@ -12,62 +12,54 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Staatliches&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous">
+            window.onscroll = function () { myFunction() };
 
+            var navbar = document.getElementsByClassName("navbar");
+            var sticky = navbar.offsetTop;
 
-
-
-
-    <script>
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementsByClassName("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
             }
-        }
 
-    </script>
+        </script>
 
+    <section class="sec1">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
-
-
-    <header>
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <div class="div1">
+        <div class="mid">
+            <h1><a>Hi I'm Rosh</a></h1>
         </div>
-    </header>
-
-    <section>
-        <div class="div1">
-
-            <div class="mid">
-                <h1><a>Hi I'm Rosh</a></h1>
-            </div>
-    </section>
     </div>
-    <section>
-        <div class="sec2">hello</div>
-    </section>
-    <section>
-        <div class="sec2">hello</div>
-    </section>
+
+    <div class="sec2">hello</div>
+
+    <div class="sec3">hello</div>
+
 </body>
 
 </html>
