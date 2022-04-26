@@ -1,125 +1,191 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    scroll-behavior:smooth ;
+    scroll-behavior: smooth;
 }
+
 /*body*/
-body{
-    background-color:#FFF8F3; 
+body {
+    background-color: #FFF8F3;
 }
 
 
 /*navbar*/
 /*space btw top nd the navbar*/
-.navbar{
+.navbar {
     /*height: 12;
     overflow: hidden;*/
-    background: 	rgba(95,39,2, 0.349);
-    width:max-content;
-    display:block;
+    background: rgba(95, 39, 2, 0.349);
+    width: max-content;
+    display: block;
     padding: 5px;
-    z-index:2;
+    z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 87vh;
+    margin-top: 83vh;
     display: flex;
     backdrop-filter: blur(15px);
 }
+
 /* no bullets && Center alignment*/
-.navbar ul{
+.navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /*space btw nav options*/
-.navbar ul li{
-    padding:10px;
+.navbar ul li {
+    padding: 10px;
     font-size: 17px;
 }
+
 /*no text style && color && font family of nav*/
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
-    color:white/*#FAEEE7*/;
-    font-family: 'Roboto', sans-serif;
+    color: white
+        /*#FAEEE7*/
+    ;
+
 
 }
+
 /*on hover of nav fonts*/
 .navbar a:hover {
-    color: 		#e34200;
+    color: #e34200;
     transition: 0.3s ease;
 }
+
 /*sticky nav*/
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
-.orimage{
+
+.orimage {
     background-image: url(img/mainbg.jpg);
     background-position: bottom center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
 }
+
 /*whole home page*/
-.div1{
-    height: 100vh; 
+.div1 {
+    height: 100vh;
     text-align: center;
 
 }
+
 /*Hi I'm Rosh*/
-.mid{
-    color:	white;
-    font-family: 'Staatliches';    
-
-}
-.mid h1 { 
-    font-size: 50px;
+.mid {
+    color: white;
+    font-family: 'Staatliches';
     padding-top: 40vh;
+}
+
+.mid h1 a {
+    color:#eb7923;
+    font-size: 60px;
+    letter-spacing: 1rem;
+    margin-right: -1rem;
+}
+
+.subhead {
+    font-family: 'Exo', sans-serif;
+}
+
+.download {
+    margin-top: 10px;
 
 }
-.down{
-    padding-top: 45vh;
+
+.download button {
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family:'Exo';
+    background-color: rgba(235,121,35,225);
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+
+}
+
+.download button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.download button:hover {
+    color: #eb7923;
+}
+
+.download button:hover::before {
+    width: 100%;
+}
+
+.download button a {
     text-decoration: none;
 }
-.down i{
-    color: white;
+
+.down {
+    text-decoration: none;
+    margin-top: 1rem;
 }
-.down i:hover{
+
+.down a {
+    color: white;
+
+}
+
+.down a:hover {
     color: orangered;
 }
+
 /*Section 2*/
-#sec2 , .sec3 {
+#sec2,
+.sec3 {
     position: relative;
-    height:100vh;
-    background-color:rgb(255, 248, 243)/*#f5611d/*#FAEEE7*/;
+    height: 100vh;
+    background-color: rgb(255, 248, 243)
+        /*#f5611d/*#FAEEE7*/
+    ;
 }
 
 @media screen and (max-width: 340px) {
-    .navbar{
+    .navbar {
         padding: 0;
     }
-    .navbar ul li{
-        padding:6px;
+
+    .navbar ul li {
+        padding: 6px;
         font-size: 14px;
     }
-    .mid h1 a{  
-        font-size: 30px;
-    
-    }
+
 }
+
 @media screen and (max-width: 440px) {
-    .navbar{
+    .navbar {
         padding: 5px;
     }
-    .navbar ul li{
-        padding:8px;
+
+    .navbar ul li {
+        padding: 8px;
         font-size: 18px;
-    }
-    .mid h1 a{  
-        font-size: 44px;
-    
     }
 }
