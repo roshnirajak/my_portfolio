@@ -166,17 +166,25 @@ body {
     padding-top: 40px;
 }
 .head a{
-    
     font-family: 'Cairo';
 
 }
-.container-skill{
+.skill{
+    
+    font-family: 'Cairo';
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.bgskill{
-    padding:30px
+.skill-container{
+    height: 90px;
+    width:200px;
+    text-align: center;
+    padding:20px
+}
+.light-text{
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 340px) {
@@ -200,4 +208,8 @@ body {
         padding: 8px;
         font-size: 18px;
     }
+
+}
+@media screen and (min-width:900px){
+
 }
