@@ -6,7 +6,7 @@
 
 /*body*/
 body {
-    background-color: #FFF8F3;
+    background-color: #FFF8F3 /*: light orange*/;
 }
 
 
@@ -155,11 +155,8 @@ body {
 }
 
 /*Skill Section*/
-#sec2,
-.sec3 {
-    position: relative;
-    height: 100vh;
-    background-color: rgb(255, 248, 243)/*#f5611d/*#FAEEE7*/;
+#sec2{
+   height: auto;
 }
 .head{
     text-align: center;
@@ -178,13 +175,16 @@ body {
     align-items: center;
 }
 .skill-container{
-    height: 90px;
+    height: 190px;
     width:200px;
     text-align: center;
     padding:20px
 }
 .light-text{
     flex-wrap: wrap;
+}
+.skill-img{
+    max-height: 100px;
 }
 
 @media screen and (max-width: 340px) {
