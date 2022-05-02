@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <!--JS-->
     <script src="folio.js"></script>
     <!--Fonts-->
@@ -28,28 +27,28 @@
 
     <section class="sec1">
 
-        <nav class="navbar">
+        <div class="navbar1">
             <ul>
                 <li><a href="#menu"><i class="bi bi-house-door-fill"></i>
                         <!--Home-->
                     </a></li>
-                <li><a href="#sec2"><i class="fa-solid fa-code"></i>
+                <li><a href="#sec2"><b><i class="bi bi-code-slash"></i></b>
                         <!--Skills-->
                     </a></li>
-                <li><a href="#"><i class="bi bi-person-fill"></i>
+                <li><a href="#about"><i class="bi bi-person-fill"></i>
                         <!--About Me-->
                     </a></li>
-                <li><a href="#"><i class="bi bi-envelope-fill"></i>
+                <li><a href="#contact"><i class="bi bi-envelope-fill"></i>
                         <!--Contacts-->
                     </a></li>
             </ul>
-        </nav>
+        </div>
 
     </section>
     <div class="orimage" id="menu">
         <div class="div1">
             <div class="mid">
-                <span class="subhead">Hello I'm</span>
+                <div class="subhead">Hello I'm</div>
                 <h1><a>ROSH</a></h1>
                 <div class="subhead">Web Developer in process</div>
             </div>
@@ -86,29 +85,51 @@
         <h1 class="head"><a>Project</a></h1>
         <div class="slider">
             <div class="project project-visible"></div>
-            <div class="project"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ad qui eius nisi
-                suscipit aspernatur ratione voluptatem rem sit. Voluptas ipsa minima, architecto veniam iure nemo
-                commodi ex nostrum doloribus.</div>
+            <div class="project">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ad qui eius nisi
+                    suscipit aspernatur ratione voluptatem rem sit. Voluptas ipsa minima, architecto veniam iure nemo
+                    commodi ex nostrum doloribus.</div>
             </div>
-            <div class="project"><div>lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ad laboriosam rem
-                corrupti maxime consequatur optio fugiat dolorum omnis porro, deserunt, ea repudiandae! Voluptates sunt
-                unde est fugit nesciunt vitae.</div>
+            <div class="project">
+                <div>lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ad laboriosam rem
+                    corrupti maxime consequatur optio fugiat dolorum omnis porro, deserunt, ea repudiandae! Voluptates
+                    sunt
+                    unde est fugit nesciunt vitae.</div>
             </div>
-            <div class="project"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam delectus dignissimos
-                maiores porro incidunt ad, adipisci iusto sint rerum neque possimus aperiam magnam in quasi veniam.
-                Doloremque, inventore odit.</div>
+            <div class="project">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam delectus dignissimos
+                    maiores porro incidunt ad, adipisci iusto sint rerum neque possimus aperiam magnam in quasi veniam.
+                    Doloremque, inventore odit.</div>
             </div>
-            <div class="project"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nisi expedita?
-                Beatae debitis, unde provident id modi fugit maiores? Voluptatibus similique ab alias blanditiis esse
-                exercitationem nulla earum atque in.</div>
+            <div class="project">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nisi expedita?
+                    Beatae debitis, unde provident id modi fugit maiores? Voluptatibus similique ab alias blanditiis
+                    esse
+                    exercitationem nulla earum atque in.</div>
             </div>
             <div class="slide-btn-sec">
-                <button class="slide-btn-pre">Previous<</button>
+                <button class="slide-btn-pre">Previous<< /button>
                         <button class="slide-btn-next">Next></button>
             </div>
         </div>
     </div>
 
+    <div class="sec4" id="about">
+        <h1 class="head"><a>About</a></h1>
+    </div>
+    <div class="sec5" id="contact">
+        <h1 class="head"><a>Contact</a></h1>
+        <div class="form-area">
+            <form action="contactform.php" method="post">
+                <input class="form-container" type="text" name="name" placeholder="Your Name">
+                <input class="form-container" type="email" name="mail" placeholder="Your Email">
+                <textarea class="form-container" name="message" cols="30" rows="10"
+                    placeholder="Type Your Message"></textarea>
+                <button class="form-container" type="submit" name="submit">submit</button>
+            </form>
+        </div>
+    </div>
+ 
 </body>
 
 </html>
