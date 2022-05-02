@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <!--JS-->
     <script src="folio.js"></script>
     <!--Fonts-->
@@ -15,44 +16,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
-    <!--icons-->
+    <!--icons on navbar-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/0ca5b140a9.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-        crossorigin="anonymous">
-            window.onscroll = function () { myFunction() };
-
-            var navbar = document.getElementsByClassName("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-
-        </script>
+    <!--JQuery-->
 
     <section class="sec1">
 
         <nav class="navbar">
             <ul>
-                <li><a href="#"><i class="bi bi-house-door-fill"></i></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-code"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-fill"></i></i></a></li>
-                <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>
+                <li><a href="#menu"><i class="bi bi-house-door-fill"></i>
+                        <!--Home-->
+                    </a></li>
+                <li><a href="#sec2"><i class="fa-solid fa-code"></i>
+                        <!--Skills-->
+                    </a></li>
+                <li><a href="#"><i class="bi bi-person-fill"></i>
+                        <!--About Me-->
+                    </a></li>
+                <li><a href="#"><i class="bi bi-envelope-fill"></i>
+                        <!--Contacts-->
+                    </a></li>
             </ul>
         </nav>
 
     </section>
-    <div class="orimage">
+    <div class="orimage" id="menu">
         <div class="div1">
             <div class="mid">
                 <span class="subhead">Hello I'm</span>
@@ -69,26 +63,50 @@
     <div id="sec2">
         <h1 class="head"><a>Skills</a></h1>
         <div class="skill">
-        <div class="skill-container">
-            <img src="img/web_development.png" alt="" class="skill-img" height="100px">
-            <h3>Web Development</h3>
-            <small class="light-text">HTML, CSS, JavaScript, PHP, Wordpress, Responsive Website</small>
-        </div><br>
-        <div class="skill-container">
-            <img src="img/app_development.png" alt="" class="skill-img" height="100px">
-            <h3>App Development</h3>
-            <small class="light-text">Flutter, Dart<br></small>
-        </div>
-        <div class="skill-container">
-            <img src="img/mis.svg" alt="" class="skill-img" style="color: orange;">
-            <h3>Miscellaneous</h3>
-            <small class="light-text">C, Python<br></small>
-        </div>
+            <div class="skill-container">
+                <img src="img/web_development.png" alt="" class="skill-img" height="100px">
+                <h3>Web Development</h3>
+                <small class="light-text">HTML, CSS, JavaScript, PHP, Wordpress, Responsive Website</small>
+            </div><br>
+            <div class="skill-container">
+                <img src="img/app_development.png" alt="" class="skill-img" height="100px">
+                <h3>App Development</h3>
+                <small class="light-text">Flutter, Dart<br></small>
+            </div>
+            <div class="skill-container">
+                <img src="img/mis.svg" alt="" class="skill-img" style="color: orange;">
+                <h3>Miscellaneous</h3>
+                <small class="light-text">C, Python<br></small>
+            </div>
         </div>
     </div>
 
+
     <div class="sec3">
-        <h1 class="head"><a>About Me</a></h1>
+        <h1 class="head"><a>Project</a></h1>
+        <div class="slider">
+            <div class="project project-visible"></div>
+            <div class="project"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ad qui eius nisi
+                suscipit aspernatur ratione voluptatem rem sit. Voluptas ipsa minima, architecto veniam iure nemo
+                commodi ex nostrum doloribus.</div>
+            </div>
+            <div class="project"><div>lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ad laboriosam rem
+                corrupti maxime consequatur optio fugiat dolorum omnis porro, deserunt, ea repudiandae! Voluptates sunt
+                unde est fugit nesciunt vitae.</div>
+            </div>
+            <div class="project"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam delectus dignissimos
+                maiores porro incidunt ad, adipisci iusto sint rerum neque possimus aperiam magnam in quasi veniam.
+                Doloremque, inventore odit.</div>
+            </div>
+            <div class="project"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, nisi expedita?
+                Beatae debitis, unde provident id modi fugit maiores? Voluptatibus similique ab alias blanditiis esse
+                exercitationem nulla earum atque in.</div>
+            </div>
+            <div class="slide-btn-sec">
+                <button class="slide-btn-pre">Previous<</button>
+                        <button class="slide-btn-next">Next></button>
+            </div>
+        </div>
     </div>
 
 </body>

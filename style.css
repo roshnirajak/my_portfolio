@@ -15,7 +15,7 @@ body {
 .navbar {
     /*height: 12;
     overflow: hidden;*/
-    background: #712f174c;
+    background-color: rgba(63,40,22,0.3);
     width: max-content;
     display: block;
     padding: 5px;
@@ -44,10 +44,10 @@ body {
 
 /*no text style && color && font family of nav*/
 .navbar ul li a {
-    text-decoration: none;
-    color: white/*#FAEEE7*/;
-}
+    text-decoration: none; 
+    color:white
 
+}
 /*on hover of nav fonts*/
 .navbar a:hover {
     color: #e57825;
@@ -135,6 +135,7 @@ body {
 
 .download button:hover::before {
     width: 100%;
+    transition: 0.3s;
 }
 
 .download button a {
@@ -167,7 +168,7 @@ body {
 
 }
 .skill{
-    
+    margin-top: 10px;
     font-family: 'Cairo';
     display: flex;
     flex-wrap: wrap;
@@ -184,9 +185,20 @@ body {
     flex-wrap: wrap;
 }
 .skill-img{
-    max-height: 100px;
+    max-height: 80px;
 }
-
+.sec3{
+    height: 100vh;
+}
+.slider{
+    display: block; 
+    position: relative;
+}
+.slider .project{
+    max-height: 200px;
+    max-width: 400px;
+    background-color: bisque;
+}
 @media screen and (max-width: 340px) {
     .navbar {
         padding: 0;
