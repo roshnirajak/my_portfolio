@@ -4,21 +4,16 @@
     scroll-behavior: smooth;
 }
 
-/*body*/
 body {
     background-color: #FFF8F3 /*: light orange*/;
 }
-
-
-/*navbar*/
-/*space btw top nd the navbar*/
-.navbar {
+.navbar1 {
     /*height: 12;
     overflow: hidden;*/
     background-color: rgba(63,40,22,0.3);
     width: max-content;
     display: block;
-    padding: 5px;
+
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -27,201 +22,24 @@ body {
     display: flex;
     backdrop-filter: blur(15px);
 }
-
-/* no bullets && Center alignment*/
-.navbar ul {
+.navbar1 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;;
+    margin: 0;
 }
-
-/*space btw nav options*/
-.navbar ul li {
+.navbar1 ul li {
     padding: 10px;
     font-size: 17px;
-}
 
-/*no text style && color && font family of nav*/
-.navbar ul li a {
+
+}
+.navbar1 ul li a {
     text-decoration: none; 
-    color:white
+    color:white;
 
 }
-/*on hover of nav fonts*/
-.navbar a:hover {
+.navbar1 a:hover {
     color: #e57825;
     transition: 0.3s ease;
-}
-
-/*sticky nav*/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.orimage {
-    background-image: url(img/mainbg.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-}
-
-/*whole home page*/
-.div1 {
-    height: 100vh;
-    text-align: center;
-}
-
-/*Hi I'm Rosh*/
-.mid {
-    color: white;
-    font-family: 'Cairo';
-    padding-top: 35vh;
-}
-.mid h1{
-    margin-top: -20px;
-}
-.mid h1 a {
-    color:#e57825;
-    font-size: 60px;
-    letter-spacing: 1rem;
-    margin-right: -1rem;
-   
-}
-
-.subhead {
-    font-family: 'Exo', sans-serif;
-    margin-top: -20px;
-}
-
-.download {
-    margin-top: 20px;
-}
-
-.download button {
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    font-family:'Exo';
-    background-color: #e57825;
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.5s;
-    color: white;
-
-}
-
-.download button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    transition: width 0.3s ease-in-out;
-    background-color: #fff;
-    z-index: -1;
-}
-
-.download button:hover {
-    color: #e57825;
-}
-
-.download button:hover::before {
-    width: 100%;
-    transition: 0.3s;
-}
-
-.download button a {
-    text-decoration: none;
-}
-
-.down {
-    text-decoration: none;
-    margin-top: 1rem;
-}
-
-.down a {
-    color: white;
-}
-
-.down a:hover {
-    color: orangered;
-}
-
-/*Skill Section*/
-#sec2{
-   height: auto;
-}
-.head{
-    text-align: center;
-    padding-top: 40px;
-}
-.head a{
-    font-family: 'Cairo';
-
-}
-.skill{
-    margin-top: 10px;
-    font-family: 'Cairo';
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.skill-container{
-    height: 190px;
-    width:200px;
-    text-align: center;
-    padding:20px
-}
-.light-text{
-    flex-wrap: wrap;
-}
-.skill-img{
-    max-height: 80px;
-}
-.sec3{
-    height: 100vh;
-}
-.slider{
-    display: block; 
-    position: relative;
-}
-.slider .project{
-    max-height: 200px;
-    max-width: 400px;
-    background-color: bisque;
-}
-@media screen and (max-width: 340px) {
-    .navbar {
-        padding: 0;
-    }
-
-    .navbar ul li {
-        padding: 6px;
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (max-width: 440px) {
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar ul li {
-        padding: 8px;
-        font-size: 18px;
-    }
-
-}
-@media screen and (min-width:900px){
-
 }
